@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // app.use( multer().any())
 
 app.get('/', (req,res)=>{
-    res.send("hello world")
+    res.send("Welcome to dumping data")
 })
 
 
@@ -33,6 +33,6 @@ mongoose.connect("mongodb+srv://dumpingdata:DumpingData98@cluster0.1lj4fxy.mongo
 
 app.use('/api', route);
 
-app.listen(process.env.PORT || 9000, function () {
-    console.log('Express app running on port ' + (process.env.PORT || 9000))
+app.listen(process.env.PORT || 9001, function () {
+    console.log('Express app running on port ' + (process.env.PORT || 9001))
 });
