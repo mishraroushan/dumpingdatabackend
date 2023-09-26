@@ -10,10 +10,7 @@ const cors = require("cors");
 const path = require("path");
 
 app.use(bodyParser.json());
-app.use(cors({
-    origin : "https://main.d2mckntz38xq4s.amplifyapp.com",
-    credentials: true
-})
+app.use(cors())
 
 const cookieParser = require("cookie-parser");
 app.use(cookieParser());
