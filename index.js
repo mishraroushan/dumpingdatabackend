@@ -11,7 +11,7 @@ const path = require("path");
 
 app.use(bodyParser.json());
 app.use(cors({
-    origin : "https://main.d2mckntz38xq4s.amplifyapp.com/",
+    origin : "https://main.d2mckntz38xq4s.amplifyapp.com",
     credentials: true
 })
 
